@@ -1,7 +1,8 @@
 name: CI
 
 on:
-  workflow_dispatch:
+  repository_dispatch:
+    types: [trigger-workflow]
 
 jobs:
   build:
@@ -13,3 +14,4 @@ jobs:
 
       - name: Run a one-liner script
         run: echo "GitHub Actions triggered by Temporal!"
+
