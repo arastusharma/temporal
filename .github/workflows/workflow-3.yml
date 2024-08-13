@@ -5,6 +5,7 @@ on:
     workflows: ["Workflow 2"]
     types:
       - completed
+      - sucess
 
 jobs:
   deploy:
